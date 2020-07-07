@@ -13,14 +13,14 @@
                         <thead>
                             <tr>
                                 <th>Id</th>
-                                <th>User Id</th>
+                                <th>User Name</th>
                                 <th>Title</th>
                             </tr>
                         </thead>
                         <tfoot>
                             <tr>
                                 <th>Id</th>
-                                <th>User Id</th>
+                                <th>User Name</th>
                                 <th>Title</th>
                             </tr>
                         </tfoot>
@@ -28,7 +28,7 @@
                             @foreach ($advertisements as $advertisement)
                                 <tr>
                                     <td>{{ $advertisement->id }}</td>
-                                    <td>{{ $advertisement->user_id }}</td>
+                                    <td>{{ $advertisement->user->name }}</td>
                                     <td>{{ $advertisement->title }}</td>
                                 </tr>
                             @endforeach
